@@ -1,0 +1,104 @@
+// dialog
+.el-dialog {
+    background: var(--modal-bg-color) !important;
+  
+    .el-dialog__body {
+      color: var(--font-color) !important;
+    }
+  
+    // 右上角图标
+    .el-dialog__headerbtn:focus .el-dialog__close,
+    .el-dialog__headerbtn:hover .el-dialog__close {
+      color: @theme-color;
+    }
+  }
+  // button
+.el-button--primary {
+  background: @theme-color !important;
+  border-color: @theme-color !important;
+  &:hover{
+    color: #ccc;
+  }
+ 
+}
+.el-button--default{
+  background-color: #fff !important;
+  background:#fff !important;
+  &:hover{
+    background-color: #fff !important;
+    background:#fff !important;
+    color: #ccc;
+  }
+}
+// input
+@input-height: 24px;
+.el-input{
+  
+  .el-input__inner {
+    height: @input-height !important;
+    line-height: @input-height !important;
+    background-color: var(--input-bgcolor) !important;
+    border: none !important;
+    color: var(--input-color) !important;
+    &:hover{
+      border: none !important;
+    }
+  }
+  .el-input__prefix{
+    i{
+      line-height: @input-height + 1px !important;
+      color:var(--input-color) ;
+      transition: none !important;
+    }
+  }
+  input::-webkit-input-placeholder {
+    color: var(--font-color-grey-shallow) !important;
+  }
+}
+// loading
+.el-loading-spinner {
+  circle {
+    stroke: @theme-color !important;
+  }
+  .el-loading-text {
+    color: @theme-color !important;
+  }
+  .el-icon-loading {
+    color: @theme-color !important;
+  }
+}
+// dialog
+.el-dialog {
+  background: var(--modal-bg-color) !important;
+  .box-shadow;
+
+  .el-dialog__body {
+    color: var(--font-color) !important;
+  }
+
+  // 右上角图标
+  .el-dialog__headerbtn:focus .el-dialog__close,
+  .el-dialog__headerbtn:hover .el-dialog__close {
+    color: @theme-color;
+  }
+}
+// pagination
+.el-pager li.active {
+  color: @theme-color !important;
+  cursor: default;
+}
+.el-pager li:hover {
+  color: @theme-color !important;
+}
+.el-pagination button:hover {
+  color: @theme-color ;
+}
+.el-pagination button:disabled {
+  color: #C0C4CC !important;
+  background-color: #FFF;
+  cursor: not-allowed;
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: #000000;
+  color: #FFF;
+}
